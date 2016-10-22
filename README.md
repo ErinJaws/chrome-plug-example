@@ -1,2 +1,2 @@
 # chrome-plug-example
-Ad libs nasty comments to funny comments.
+Replaces nasty comments withh funny comments.
