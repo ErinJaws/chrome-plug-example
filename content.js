@@ -1,5 +1,5 @@
 var elements = document.getElementsByTagName('*');
-
+//https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName
 for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
 
