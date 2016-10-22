@@ -1,16 +1,17 @@
 {
-  "manifest_version": 2,
-
-  "name": "Getting started example",
-  "description": "This extension will replace one word with another",
-  "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+    "manifest_version": 2,
+    "name": "Adlib ",
+    "description": "Ad Lib Commenter",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
 }
