@@ -7,6 +7,7 @@ for (var i = 0; i < elements.length; i++) {
         var node = element.childNodes[j];
 
         if (node.nodeType === 3) {
+            //https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
             var text = node.nodeValue;
             var replacedText = text.replace('ugly', 'pretty');
 
