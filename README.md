@@ -1,2 +1,2 @@
 # chrome-plug-example
-The basic chrome plug in that Google gives as an example. 
+Ad libs nasty comments to funny comments.
