@@ -2,31 +2,16 @@
 https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName
 Select all HTML elements in the webpage.
 */
-var elements = document.getElementsByClassName('comment-renderer-text-content');
+var elements = document.getElementsByClassName("comment-renderer-text-content");
 
 for (var i = 0; i < elements.length; i++) {
-    var element = elements[i];
-
-//For each element consider all of its childern (node).
-
-   // for (var j = 0; j < element.childNodes.length; j++) {
-     //   var node = element.childNodes[j];
-/*
-//https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
-If the child is text then take value of the node.
-*/
-        if (element.nodeType === 3) {
-//https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue 
-            //.replace(/slut/gi,"person"/).replace(/bitch/gi,"superheroine"/)
-            var text = element.nodeValue;
-            var replacedText = text.replace(/the/gi,"tha");
-
-            if (replacedText !== text) {
-//https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild
-                console.log('replaced');
-                element.replaceChild(document.createTextNode(replacedText), node);
-            }
-       // }
+    var text = elements[i].innerHTML;
+    
+    var replacedText = text.replace(/the/g,"tha");
+    
+    if (replacedText !== text) {
+        console.log('replaced2');
+        text = replacedText 
     }
 }
 
