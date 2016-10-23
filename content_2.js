@@ -19,7 +19,7 @@ If the child is text then take value of the node.
 //https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue 
             //.replace(/slut/gi,"person"/).replace(/bitch/gi,"superheroine"/)
             var text = node.nodeValue;
-            var replacedText = text.replace(/the/gi,"tha"/);
+            var replacedText = text.replace(/the/gi,"tha");
 
             if (replacedText !== text) {
 //https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild
