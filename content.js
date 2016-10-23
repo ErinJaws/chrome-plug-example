@@ -28,12 +28,4 @@ If the child is text then take value of the node.
     }
 }
 
-/*
-var dictionary = {
-    "ugly": "beautiful",
-    "slut": "person",
-    "bitch": "superheroine",
-};
-*/
-
 
