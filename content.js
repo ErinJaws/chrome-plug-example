@@ -18,7 +18,7 @@ If the child is text then take value of the node.
         if (node.nodeType === 3) {
 //https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue            
             var text = node.nodeValue;
-            var replacedText = text.replace(/ugly/gi, 'pretty');
+            var replacedText = text.replace(/ugly/gi,"beautiful"/).replace(/slut/gi,"person"/).replace(/bitch/gi,"superheroine"/);
 
             if (replacedText !== text) {
 //https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild                
@@ -28,14 +28,12 @@ If the child is text then take value of the node.
     }
 }
 
-
+/*
 var dictionary = {
     "ugly": "beautiful",
     "slut": "person",
     "bitch": "superheroine",
 };
+*/
 
-
-//way 1
-var clean = explicit.replace(/ugly/gi,"beautiful"/).replace(/slut/gi,"person"/).replace(/bitch/gi,"superheroine"/);
 
