@@ -27,3 +27,15 @@ If the child is text then take value of the node.
         }
     }
 }
+
+
+var dictionary = {
+    "ugly": "beautiful",
+    "slut": "person",
+    "bitch": "superheroine",
+};
+
+
+//way 1
+var clean = explicit.replace(/ugly/gi,"beautiful"/).replace(/slut/gi,"person"/).replace(/bitch/gi,"superheroine"/);
+
