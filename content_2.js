@@ -2,7 +2,7 @@
 https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName
 Select all HTML elements in the webpage.
 */
-var elements = document.getElementsByTagName('*');
+var elements = document.getElementsByClassName('comment-renderer-text-content');
 
 for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
@@ -19,7 +19,7 @@ If the child is text then take value of the node.
 //https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue 
             //.replace(/slut/gi,"person"/).replace(/bitch/gi,"superheroine"/)
             var text = node.nodeValue;
-            var replacedText = text.replace(/ugly/gi,"beautiful"/);
+            var replacedText = text.replace(/the/gi,"tha"/);
 
             if (replacedText !== text) {
 //https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild
