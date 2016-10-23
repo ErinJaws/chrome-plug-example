@@ -16,12 +16,14 @@ for (var i = 0; i < elements.length; i++) {
 If the child is text then take value of the node.
 */
         if (node.nodeType === 3) {
-//https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue            
+//https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue 
+            //.replace(/slut/gi,"person"/).replace(/bitch/gi,"superheroine"/)
             var text = node.nodeValue;
-            var replacedText = text.replace(/ugly/gi,"beautiful"/).replace(/slut/gi,"person"/).replace(/bitch/gi,"superheroine"/);
+            var replacedText = text.replace(/ugly/gi,"beautiful"/);
 
             if (replacedText !== text) {
-//https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild                
+//https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild
+                console.log('replaced');
                 element.replaceChild(document.createTextNode(replacedText), node);
             }
         }
